@@ -1,0 +1,22 @@
+{
+  "name": "vsivsad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perushkov/vsivsad.git"
+  },
+  "author": "vikaperushko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perushkov/vsivsad/issues"
+  },
+  "homepage": "https://github.com/perushkov/vsivsad#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
