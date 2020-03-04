@@ -3,88 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" style="width:142px;height:142px;border:0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vsivsad</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div style="background-color:rgba(19, 224, 146, 0.63)">
-            <span><a href="index.html">Ексклюзивні сорти рослин для вашого саду</a></span>
+
+        <nav>
+            <ul class="top-menu">
+                <li><a href="home">Головна</a>
+                </li>
+                <li><a href="delivery">Доставка</a>
+                </li>
+                <li><a href="payment">Оплата</a>
+                </li>
+                <li><a href="contact">Контакти</a>
+                </li>
+                <li><a href="basket">Кошик</a>
+                </li>
+            </ul>
+        </nav> 
+        <section id="search">
+            <form>
+                <label for="search">Пошук</label>
+                <input type="search" id="search" name="search">
+            </form>  
+        </section>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home">Головна</a>
-            </li>
-            <li><a href="delivery">Доставка</a>
-            </li>
-            <li><a href="payment">Оплата</a>
-            </li>
-            <li><a href="contact">Контакти</a>
-            </li>
-            <li><a href="basket">Кошик</a>
-            </li>
-        </ul>
-    </nav>
-    <section id=nav>
-        <form>
-            <label for="search">Пошук</label>
-            <input type="search" id="search" name="search">
-        </form> 
-        <select id="lang" name="lang">
-                <option value="ua">UA</option>
-                <option value="eng">ENG</option>
-                <option value="ru">RU</option>
-        </select>   
-    </section>
     <main>
-        <h3>Ексклюзивні сорти рослин для вашого саду</h3>
-        <h3>Замовлення рослин</h3>
-        <h3>(068)-330-78-78</h3>
-        <h3>Консультації по догляду</h3>
-        <h3>(068)-780-38-38</h3>
-        <h3>vsivsad@gmail.com</h3>
+        <img src="img/logo_sqr.png" alt="logo"type="image"> 
+        <p>Ексклюзивні сорти рослин для вашого саду<br>
+        Замовлення рослин (068)-330-78-78<br>
+        Консультації по догляду (068)-780-38-38<br>
+        vsivsad@gmail.com</p>
         <br>
-    <section id=info>
-        <img src="img/logo_sqr.png" alt="logo"type="image" style="width:200px;height:200px;border:0;">  
-        <a href="https://www.instagram.com/_vsi.v.sad_/">
-            <img src="/img/inst.png" alt="instagram" style="width:50px;height:50px;border:0;">
-        </a>
-        <a href="https://www.facebook.com/vsivsadua/">
-            <img src="/img/fb_logo.png" alt="facebook" style="width:50px;height:50px;border:0;">
-        </a>
-        <a href="https://www.facebook.com/vsivsadua/">
-            <img src="/img/fb_mes_logo.svg" alt="facebook" style="width:50px;height:50px;border:0;">
-        </a>
-        <a href="https://www.instagram.com/_vsi.v.sad_/">in</a> 
-        <button onclick="viber = 'https://www.instagram.com/_vsi.v.sad_/'">viber</button>
-        <button onclick="facebook = 'https://www.facebook.com/vsivsadua/'">fb</button>
-        <button onclick="email = 'https://www.facebook.com/vsivsadua/'">fb</button>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="all">Всі</a>
-            </li>
-            <li><a href="roses">Троянди</a>
-            </li>
-            <li><a href="bushes">Кущі</a>
-            </li>
-            <li><a href="peonies">Півонії</a>
-            </li>
-            <li><a href="iris">Іриси</a>
-            </li>
-            <li><a href="exotic">Трвянисті рослини</a>
-            </li>
-            <li><a href="exotic">Хвойні рослини</a>
-            </li>
-            <li><a href="other">Інші</a>
-            </li>
-        </ul>
-    </nav> 
+        <section id="info">
+            <img src="img/logo_sqr.png" alt="logo"type="image">  
+            <a href="https://www.instagram.com/_vsi.v.sad_/">
+            <img src="img/logo_sqr.png" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/vsivsadua/">
+            <img src="img/logo_sqr.png" alt="facebook">
+            </a>
+            <a href="https://www.facebook.com/vsivsadua/">
+            <img src="img/logo_sqr.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/_vsi.v.sad_/">in</a> 
+        </section id="categories">
+        <nav>
+            <ul>
+                <li><a href="all">Всі</a>
+                </li>
+                <li><a href="roses">Троянди</a>
+                </li>
+                <li><a href="peonies">Півонії</a>
+                </li>
+                <li><a href="iris">Іриси</a>
+                </li>
+                <li><a href="other">Інші</a>
+                </li>
+            </ul>
+        </nav> 
     <br>
-    <section id=roses>
+    <div id="roses">
         <img src="img/abraham_darby.png" alt="abraham derby rose" style="width:450px;height:350px;border:0;">
-        <h3>[001] Abraham Derby</h3> <h3>150 грн./шт.</h3>
+        <p>[001] Abraham Derby 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -103,7 +88,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
          <img src="img/belvedere.png" alt="belvedere rose" style="width:450px;height:350px;border:0;">
-         <h3>[002] Belvedere</h3><h3>150 грн.</h3>
+         <p>[002] Belvedere 150 грн./шт.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -122,7 +107,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/delicia.png" alt="delicia rose" style="width:450px;height:350px;border:0;">
-         <h3>[003] Delicia</h3><h3>150 грн.</h3>
+         <p>[003] Delicia 150 грн./шт.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -141,7 +126,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
           <br>
           <img src="img/eden_rose.png" alt="eden rose" style="width:450px;height:350px;border:0;">
-          <h3>[004] Eden Rose</h3><h3>150 грн.</h3>
+          <p>[004] Eden Rose 150 грн./шт.</p>
           <h3>кількість саджанців</h3>
           <select id="numb" name="numb">
               <option value="1">1</option>
@@ -160,7 +145,7 @@
           <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/eric_tabarly.png" alt="eric eric_tabarly rose" style="width:450px;height:350px;border:0;">
-        <h3>[005] Eric Tabarly</h3><h3>150 грн.</h3>
+        <p>[005] Eric Tabarly 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -179,7 +164,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/ferdi.png" alt="ferdi rose" style="width:450px;height:350px;border:0;">
-         <h3>[006] Ferdi</h3><h3>150 грн.</h3>
+         <p>[006] Ferdi 150 грн./шт.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -198,7 +183,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
          <br>
          <img src="img/graham_thomas.png" alt="graham graham_thomas rose" style="width:450px;height:350px;border:0;">
-         <h3>[007] Graham Thomas</h3><h3>150 грн.</h3>
+         <p>[007] Graham Thomas 150 грн./шт.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -217,7 +202,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/heritage.png" alt="heritage rose" style="width:450px;height:350px;border:0;">
-        <h3>[008] Heritage</h3><h3>150 грн.</h3>
+        <p>[008] Heritage 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -236,7 +221,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/jalitah.png" alt="jalitah rose" style="width:450px;height:350px;border:0;">
-        <h3>[009] Jalitah</h3><h3>150 грн.</h3>
+        <p>[009] Jalitah 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -255,7 +240,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/lions.png" alt="lions rose" style="width:450px;height:350px;border:0;">
-        <h3>[010] Lions</h3><h3>150 грн.</h3>
+        <p>[010] Lions 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -274,7 +259,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/lord_byron.png" alt="lord_byron rose" style="width:450px;height:350px;border:0;">
-        <h3>[011] Lord Byron</h3><h3>150 грн.</h3>
+        <p>[011] Lord Byron 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -293,7 +278,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
         <br>
         <img src="img/othello.png" alt="othello rose" style="width:450px;height:350px;border:0;">
-        <h3>[012] Othello</h3><h3>150 грн.</h3>
+        <p>[012] Othello 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -312,7 +297,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
             <br>
             <img src="img/parole.png" alt="parole rose" style="width:450px;height:350px;border:0;">
-            <h3>[013] Parole</h3><h3>150 грн./шт.</h3> 
+            <p>[013] Parole 150 грн./шт.</p> 
             <h3>кількість саджанців</h3>
             <select id="numb" name="numb">
                 <option value="1">1</option>
@@ -331,7 +316,7 @@
             <button type="button" onclick="alert('buy')">Купити</button> 
             <br>
             <img src="img/pat_austin.png" alt="pat austin rose" style="width:450px;height:350px;border:0;">
-            <h3>[014] Pat Austin</h3><h3>150 грн./шт.</h3>
+            <p>[014] Pat Austin 150 грн./шт.</p>
             <h3>кількість саджанців</h3>
             <select id="numb" name="numb">
                 <option value="1">1</option>
@@ -350,7 +335,7 @@
             <button type="button" onclick="alert('buy')">Купити</button> 
              <br>
              <img src="img/peace_gloria.png" alt="peace_gloria rose" style="width:450px;height:350px;border:0;">
-        <h3>[015] Peace Gloria</h3><h3>150 грн./шт.</h3>
+        <p>[015] Peace Gloria 150 грн./шт.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -369,7 +354,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
          <br>
          <img src="img/polka.png" alt="polka rose" style="width:450px;height:350px;border:0;">
-         <h3>[016] Polka</h3><h3>150 грн./шт.</h3>
+         <p>[016] Polka 150 грн./шт.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -388,7 +373,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
           <br>
           <img src="img/pomponella.png" alt="pomponella rose" style="width:450px;height:350px;border:0;">
-          <h3>[017] Pomponella</h3><h3>150 грн./шт.</h3>
+          <p>[017] Pomponella 150 грн./шт.</p>
           <h3>кількість саджанців</h3>
           <select id="numb" name="numb">
               <option value="1">1</option>
@@ -407,8 +392,7 @@
           <button type="button" onclick="alert('buy')">Купити</button> 
            <br>
            <img src="img/ranunkula.png" alt="ranunkula rose" style="width:450px;height:350px;border:0;">
-           <h3>[019] Ranunkula</h3>
-           <h3>150 грн./шт.</h3>
+           <p>[019] Ranunkula 150 грн./шт.</p>
            <h3>кількість саджанців</h3>
            <select id="numb" name="numb">
                <option value="1">1</option>
@@ -427,8 +411,7 @@
            <button type="button" onclick="alert('buy')">Купити</button> 
             <br>
             <img src="img/rugelda.png" alt="rugelda rose" style="width:450px;height:350px;border:0;">
-            <h3>[020] Rugelda</h3>
-            <h3>150 грн.</h3>
+            <p>[020] Rugelda 150 грн.</p>
             <h3>кількість саджанців</h3>
             <select id="numb" name="numb">
                 <option value="1">1</option>
@@ -447,8 +430,7 @@
             <button type="button" onclick="alert('buy')">Купити</button> 
              <br>
              <img src="img/shropshire_lad.png" alt="shropshire_lad rose" style="width:450px;height:350px;border:0;">
-        <h3>[021] Shropshire Lad</h3>
-        <h3>150 грн.</h3>
+        <p>[021] Shropshire Lad 150 грн.</p>
         <h3>кількість саджанців</h3>
         <select id="numb" name="numb">
             <option value="1">1</option>
@@ -467,8 +449,7 @@
         <button type="button" onclick="alert('buy')">Купити</button> 
          <br>
          <img src="img/sparkling_ruffles.png" alt="sparkling_ruffles rose" style="width:450px;height:350px;border:0;">
-         <h3>[022] Sparling Ruffles</h3>
-         <h3>150 грн.</h3>
+         <p>[022] Sparling Ruffles 150 грн.</p>
          <h3>кількість саджанців</h3>
          <select id="numb" name="numb">
              <option value="1">1</option>
@@ -487,8 +468,7 @@
          <button type="button" onclick="alert('buy')">Купити</button> 
           <br>
           <img src="img/summer_song.png" alt="summer_song rose" style="width:450px;height:350px;border:0;">
-          <h3>[023] Summer Song</h3>
-          <h3>150 грн.</h3>
+          <p>[023] Summer Song 150 грн.</p>
           <h3>кількість саджанців</h3>
           <select id="numb" name="numb">
               <option value="1">1</option>
@@ -507,7 +487,7 @@
           <button type="button" onclick="alert('buy')">Купити</button> 
            <br>
            <img src="img/wedding_piano.png" alt="wedding_piano rose" style="width:450px;height:350px;border:0;">
-           <h3>[024] Wedding Piano</h3><h3>150 грн./шт.</h3> 
+           <p>[024] Wedding Piano 150 грн./шт.</p> 
            <h3>кількість саджанців</h3>
            <select id="numb" name="numb">
                <option value="1">1</option>
@@ -525,16 +505,12 @@
            </select>   
            <button type="button" onclick="alert('buy')">Купити</button> 
             <br>
-    </section>
+        </div>
     <br>
-    <section id=contacts>
+    <section id="contacts">
         <h2>Наші контакти:</h2>
-        <h3>067-456-45-67</h3>
-        <h3>087-987-98-78</h3>
-        <h3>vsivsad@gmai.com</h3>
-        <h3>shop.vsivsad@gmail.com</h3>
-
-        <h3>Зв'язатися з нами:</h3>
+        <p>067-456-45-67<br>087-987-98-78<br>vsivsad@gmai.com<br>shop.vsivsad@gmail.com</p>
+        <br><h3>Зв'язатися з нами:</h3>
         <label>
             Iм'я:
             <input type="text" placeholder="Ім'я" required>
@@ -577,8 +553,7 @@
                 <input type="radio" name="group3" value="curly"><label>ппп</label>
                 <input type="radio" name="group3" value="gray"><label>ммм</label>
         </fieldset>
-        <br>
-        
+        <br>   
         <label>Ваші зауваження і побажання</label>
         <br>
         <br>
