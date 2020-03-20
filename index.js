@@ -8,7 +8,7 @@ fetch("data.json")
             avaliableItems.push(element);
             node.innerHTML = `
                 <img src="img/${element.image}" alt="variety of roses" style="width:450px;height:350px;border:0;">
-                <p>[${element.id}] ${element.name} ${element.price} грн./шт.</p>
+                <p>[${element.id}] ${element.name} ${element.price} грн./саджанець</p>
                 <button type="button" onclick="onAddToBasket('${element.id}')">Купити</button>
                 <select name="numb" id="select_${element.id}">
                     <option value="1">1</option>
@@ -24,7 +24,6 @@ fetch("data.json")
                     <option value="11">11</option>
                     <option value="12">12</option>
                 </select>
-                <h3>кількість саджанців</h3>
                 <br>
             `;
             container.appendChild(node);
