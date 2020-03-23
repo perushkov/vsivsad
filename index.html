@@ -18,15 +18,15 @@
         </div>
         <nav>
             <ul class="topmenu">
-                <li><a href="home">Головна</a>
+                <li><a href="#home-header">Головна</a>
                 </li>
-                <li><a href="delivery">Доставка</a>
+                <li><a href="#delivery-header">Доставка</a>
                 </li>
-                <li><a href="payment">Оплата</a>
+                <li><a href="#payment-header">Оплата</a>
                 </li>
-                <li><a href="contact">Контакти</a>
+                <li><a href="#contact-header">Контакти</a>
                 </li>
-                <li><a href="basket">Кошик</a>
+                <li><a href="basket.html">Кошик</a>
                 </li>
                 <li>
                     <form class="search">
@@ -37,109 +37,61 @@
             </ul>
         </nav>
         <div id="present">
-            <p class="title"> Ексклюзивні сорти рослин <br> для вашого саду<br>
+            <p class="title">"Всі в сад" <br> Ексклюзивні сорти рослин <br> для вашого саду<br>
                 Замовлення рослин <br> (068)-330-78-78<br>
                 Консультації по догляду <br> (068)-780-38-38<br>
-                vsivsad@gmail.com
+                vsivsad@gmail.com <br>
             </p>
-            <h1>Всі в сад</h1>
         </div>
     </header>
-
     <main>
-        <!-- <section id="info"> -->
-        <!-- <img src="img/rose_sq.png" alt="logo"type="image">   -->
-        <!-- <a href="https://www.instagram.com/_vsi.v.sad_/"> -->
-        <!-- <img src="img/rose_sq.png" alt="instagram"> -->
-        <!-- </a>
-            <a href="https://www.facebook.com/vsivsadua/"> -->
-        <!-- <img src="img/rose_sq.png" alt="facebook"> -->
-        <!-- </a>
-            <a href="https://www.facebook.com/vsivsadua/"> -->
-        <!-- <img src="img/rose_sq.png" alt="facebook"> -->
-        <!-- </a>
-            <a href="https://www.instagram.com/_vsi.v.sad_/">
-            </a> 
-        </section> -->
-        <!-- <nav>
-            <ul class="category">
-                <li><a href="all">Всі</a>
-                </li>
-                <li><a href="roses">Троянди</a>
-                </li>
-                <li><a href="peonies">Півонії</a>
-                </li>
-                <li><a href="iris">Іриси</a>
-                </li>
-                <li><a href="other">Інші</a>
-                </li>
-            </ul>
-        </nav> -->
-        <br>
-        <div id="content"></div>
+
+        <div id="content" class="row"></div>
         <footer>
-        <section id="contacts">
-            <h2>Наші контакти:</h2>
-            <p>067-456-45-67<br>087-987-98-78<br>vsivsad@gmai.com<br>shop.vsivsad@gmail.com</p>
-            <br>
-            <h3>Зв'язатися з нами:</h3>
-            <label>
-                Iм'я:
-                <input type="text" placeholder="Ім'я" required>
-            </label>
-            <label>
-                Прізвище:
-                <input type="text" placeholder="Прізвище" required>
-            </label>
-            <label>
-                <label for="phone_num">Номер телефону:</label>
-                <input type="text" id="phone_num" name="phone_num" pattern="[0-9]+[0-9]+[0-9]+[0-9]{3}"
-                    title="Three letter country code"><br><br>
-            </label>
-            <br>
-            <label>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            </label>
-            <br>
-            <br>
-            <label>Оберіть, будь-ласка, спосіб доставки:</label>
-            <fieldset id="delivery">
-                <input type="radio" name="delivery" value="own"><label>самовивіз</label>
-                <input type="radio" name="delivery" value="np"><label>Нова пошта</label>
-                <input type="radio" name="delivery" value="up"><label>Укрпошта</label>
-            </fieldset>
-            <br>
-            <br>
-            <label>Оберіть,будь-ласка, спосіб оплати:</label>
-            <fieldset id="payment">
-                <input type="radio" name="payment" value="delivery"><label>При отриманні</label>
-                <input type="radio" name="payment" value="card"><label>На карту</label>
-            </fieldset>
-            <br>
-            <br>
-            <!-- <label>Щось іще може:</label>
-            <fieldset id="group3">
-                <input type="radio" name="group3" value="straight"><label>нуі</label>
-                <input type="radio" name="group3" value="curly"><label>ппп</label>
-                <input type="radio" name="group3" value="gray"><label>ммм</label>
-            </fieldset> -->
-            <br>
-            <label>Ваші зауваження і побажання</label>
-            <br>
-            <br>
-            <textarea name="message" rows="10" cols="30">
-        </textarea>
-            <br>
-            <br>
-            <input type="reset"><br>
-            <input type="checkbox">
-            <label>Я даю згоду на обробку своїх персональних даних</label>
-            <input type="submit">
-        </section>
+            <section id="contacts">
+                <!-- <div id="icons">  -->
+                <a href="https://www.instagram.com/_vsi.v.sad_/">
+                    <img src="img/inst.png" class="icon" alt="instagram">www.instagram.com/_vsi.v.sad_/
+                </a>
+                <a href="https://www.facebook.com/vsivsadua/">
+                    <img src="img/fb_logo.png" class="icon" alt="facebook">www.facebook.com/vsivsadua/
+                </a>
+                <a href="mailto:vsivsad@gmail.com">
+                    <img src="img/email.png" class="icon" alt="email">vsivsad@gmail.com
+                </a>
+                <!-- </div> -->
+                <h3 id="contact-header">Наші контакти:</h3>
+                <p>067-456-45-67<br>087-987-98-78<br>vsivsad@gmai.com<br>shop.vsivsad@gmail.com</p>
+                <h3>Зв'язатися з нами:</h3>
+                <form action="https://formspree.io/meqkkdlr" method="POST">
+                    <input type="text" name="name" placeholder="Ім'я:" required>
+                    <input type="text" name="soname" placeholder="Прізвище:" required>
+                    <input type="email" name="_replyto" placeholder="email:" required>
+                    <input type="text" name="phone_num" placeholder="tel:" required>
+                    <p id="delivery-header">Оберіть, будь-ласка, спосіб доставки:</p>
+                    <fieldset id="delivery">
+                        <input type="radio" name="delivery" value="own"><label>Cамовивіз</label>
+                        <input type="radio" name="delivery" value="np"><label>Нова пошта</label>
+                        <input type="radio" name="delivery" value="up"><label>Укрпошта</label>
+                    </fieldset>
+                    <br>
+                    <p id="payment-header">Оберіть, будь-ласка, спосіб оплати:</p>
+                    <fieldset id="payment">
+                        <input type="radio" name="payment" value="delivery"><label>При отриманні</label>
+                        <input type="radio" name="payment" value="card"><label>На карту</label>
+                    </fieldset>
+                    <label>Ваші зауваження і побажання</label><br>
+                    <textarea name="message" rows="10" cols="80">
+                    </textarea>
+                    <input type="reset"><br>
+                    <input type="checkbox">
+                    <label>Я даю згоду на обробку своїх персональних даних</label>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
         </footer>
     </main>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 
 </html>

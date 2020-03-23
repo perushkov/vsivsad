@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Корзина "Всі в сад"</title>
+    <title> Кошик "Всі в сад"</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <div id="logo" class="slogan">
             <div><img src="img/rose_rt.png" alt="logo" type="image" id="logoimg"></div>
-            <h1> Ексклюзивні сорти рослин для вашого саду</h1>
+            <h2>Ваше замовлення:</h2>
         </div>
         <form action="https://formspree.io/meqkkdlr" method="POST">
-            <div id="container">
-            </div>
+            <div id="container" style="font-size: 28px;"></div>
+            <br />
+            <label id="summary">Загалом: </label>
+            <br />
             <input type="email" placeholder="Адреса зворотнього звязку" name="contact_mail">
-            <input type="submit" value="Замовити">
+            <input type="submit" value="Замовити" id=button>
         </form>
     </header>
-    <script type="text/javascript" src="basket.js"></script>
+    <script type="text/javascript" src="scripts/basket.js"></script>
 </body>
+
 </html>

@@ -3,12 +3,29 @@ const avaliableItems = []
 fetch("data.json")
     .then(response => response.json())
     .then(data => {
-        data.forEach(element => {
-            const node = document.createElement("div");
-            avaliableItems.push(element);
-            node.innerHTML = `
+        const separator = Math.round(data.length / 2);
+        const left = data.slice(0, separator);
+        const right = data.slice(separator);
+        return [left, right];
+    })
+    .then(data => {
+        data.forEach(group => {
+            const column = document.createElement("div");
+            column.className = "coulmn";
+            insertItem(group, column)
+            container.appendChild(column);
+        });
+    })
+    .catch(error => console.error(error));
+
+const insertItem = (group, parent) => {
+    group.forEach(element => {
+        const node = document.createElement("div");
+        node.className = "item"
+        avaliableItems.push(element);
+        node.innerHTML = `
                 <img src="img/${element.image}" alt="variety of roses" style="width:450px;height:350px;border:0;">
-                <p>[${element.id}] ${element.name} ${element.price} грн./саджанець</p>
+                <p id="text">[${element.id}] ${element.name} ${element.price} грн./саджанець</p>
                 <button type="button" onclick="onAddToBasket('${element.id}')">Купити</button>
                 <select name="numb" id="select_${element.id}">
                     <option value="1">1</option>
@@ -26,10 +43,9 @@ fetch("data.json")
                 </select>
                 <br>
             `;
-            container.appendChild(node);
-        });
-    })
-    .catch(error => console.error(error));
+        parent.appendChild(node);
+    });
+};
 
 const storage = window.localStorage;
 
